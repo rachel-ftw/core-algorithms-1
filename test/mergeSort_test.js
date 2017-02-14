@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import mergeSort from '../src/mergeSort'
 
-describe('MergeSort', () => {
+describe.only('MergeSort', () => {
   let inputArray = [3,1,4,2,7,6,5,9,10,8]
 
   it('should be a function', () => {
