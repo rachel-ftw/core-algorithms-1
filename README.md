@@ -6,8 +6,6 @@ Base repository for the [Core Algorithms](https://github.com/GuildCrafts/web-dev
 
 ## Installation and Setup
 
-_Fill this out_
-
-## Usage and Examples
-
-_...and this_
+### Bubble Sort
+![bubble sort gif 2](https://www.codeproject.com/KB/recipes/SortVisualization/Bubble_Sort.gif)
+![bubble sort gif 1](https://upload.wikimedia.org/wikipedia/commons/0/06/Bubble-sort.gif)
