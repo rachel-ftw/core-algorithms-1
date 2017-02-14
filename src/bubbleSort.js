@@ -14,7 +14,6 @@ const bubbleSort = array => {
       }
     }
     if(swapsMade === 0) {
-      console.log('array in if', array)
       return array
     }
   }
