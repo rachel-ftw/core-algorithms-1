@@ -1,7 +1,7 @@
 import { expect } from 'chai'
 import mergeSort from '../src/mergeSort'
 
-describe('MergeSort', () => {
+describe.only('MergeSort', () => {
   let inputArray = [3,1,4,2,7,6,5,9,10,8]
 
   it('should be a function', () => {
@@ -16,8 +16,16 @@ describe('MergeSort', () => {
     expect(mergeSort([1])).to.eql([1])
   })
 
-  it('sorts an array using merge sort', () => {
+  it('sorts an array using merge sort, where halves are even', () => {
+    expect(mergeSort([1,2,3,4,5,6,7,8])).to.eql([1,2,3,4,5,6,7,8])
+  })
+
+  it('sorts an array using merge sort, where halves are odd', () => {
     expect(mergeSort(inputArray)).to.eql([1,2,3,4,5,6,7,8,9,10])
+  })
+
+    it('sorts an array using merge sort, array.length is odd', () => {
+    expect(mergeSort([1,2,3,4,5,6,7])).to.eql([1,2,3,4,5,6,7])
   })
 
   it('return array length equal to input', () => {
